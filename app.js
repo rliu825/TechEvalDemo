@@ -13,7 +13,7 @@ var bodyParser = require('body-parser');
 var Sequelize = require("sequelize");
 //var sqlite3 = require('sqlite3').verbose();
 //var db = new sqlite3.Database('music.db');
-
+var PORT = process.env.PORT || 3000;
 //create express server
 var app = express();
 app.use(bodyParser.json());   //support JSON-encoded bodies
@@ -279,6 +279,6 @@ app.delete('/playlists/:id', function(req, res){
 
 
 
-app.listen(3000, function() {
+app.listen(PORT, function() {
    console.log('Amazing music app server listening on port 3000!');
 });
