@@ -481,6 +481,10 @@ $('#sprec1').on('click', function(){
         alert("Your input is empty!");
         return;
     }
+    if (input === null ){
+      return;
+    }
+
     var obj = {
         "id":packages.playlists.length,
         "name":input,
