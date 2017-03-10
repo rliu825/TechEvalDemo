@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="style.css">
+        <title>ES6 / ES2015</title>        
+    </head>
+
+    <body>
+
+        <h1>ES5 vs ES6/ES7 Demo (Comparision of features)</h1>
+        <h2>3. Arrow</h2>
+		<div class ="container col-xs-12">
+            <h3>Use '() =>' to replace traditional callback syntax</h3>
+            <span class = "leftbox col-xs-6"><img class= 'pic' src='img/arrow_01_es5.png'></img>
+                <br>
+                <button class='leftbutton' onclick="arrow_1_5()">Run</button>
+                <br>
+                <textarea class='output5' name='arrow_1_5'></textarea>
+            </span>
+            <span class = "rightbox col-xs-6"><img class= 'pic' src='img/arrow_01_es6.png'></img>
+                <br>
+                <button class='rightbutton' onclick="arrow_1_6()">Run</button>
+                <br>
+                <textarea class='output6' name='arrow_1_6'></textarea>
+            </span>
+        </div>
+
+        <div class ="container col-xs-12">
+            <h3>Use '() =>' with two arguments</h3>
+            <span class = "leftbox col-xs-6"><img class= 'pic' src='img/arrow_02_es6.png'></img>
+                <br>
+                <button class='leftbutton' onclick="arrow_2_6()">Run</button>
+                <br>
+                <textarea class='output5' name='arrow_2_6'></textarea>
+            </span>
+
+        </div>
+
+
+
+        <div class ="container col-xs-12"> 
+            <h3>Use '() =>' so that we don't need "bind" anymore</h3>
+            <h5>In ES5, we need .bind(this) to use the correct "this" reference.</h5>
+            <span class = "leftbox col-xs-6"><img class= 'pic' src='img/arrow_03_es5_1.png'></img>
+
+                <div class="box green">I'm green! Click Me!</div>
+
+            </span>
+            <span class = "rightbox col-xs-6"><img class= 'pic' src='img/arrow_03_es5_2.png'></img>
+
+                <div class="box green">I'm green! Click Me too!</div>
+
+            </span>  
+        </div>
+
+        <div class ="container col-xs-12"> 
+            <h5>In ES6, using "() =>" will solve the "this" reference problem!</h5>
+            <span class = "leftbox col-xs-6"><img class= 'pic' src='img/arrow_03_es6.png'></img>
+                <div class="box green">I'm green! ES6</div>
+            </span>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <title>ES6 / ES2015</title>
+        
+        <style>
+            html,body,div,span,a,ul,li {
+              border:0;
+              font:inherit;
+              font-size:100%;
+              margin:0;
+              padding:0;
+              vertical-align:baseline;
+            }
+
+
+            .mainlink {
+              color:green;
+              font-size: 30px;
+            }
+
+            .mainlink:hover {
+              cursor: pointer;
+            }
+
+        </style>
+        
+    </head>
+
+    <body>
+
+        <h1>ES5 vs ES6/ES7 Demo (Comparision of features)</h1>
+
+        <ol>
+        <li><a class="mainlink" onclick="getVar()">Variable</a></li>
+        <li><a class="mainlink" onclick="getString()">String</a></li>
+        <li><a class="mainlink" onclick="getArrow()">Arrow</a></li>
+        <li><a class="mainlink" onclick="getClass()">Class</a></li>
+        <li><a class="mainlink" onclick="getPromise()">Promise</a></li>
+        <li><a class="mainlink" onclick="getMA()">Music-App(realtime ajax and ES6 implementation)</a></li>
+
+    </ol>
+
+
+
+        <script src="script.js"></script>
+        <script>
+          function getString(){
+            window.location.assign("/string");
+          }
+          function getVar(){
+            window.location.assign("/var");
+          }
+          function getArrow(){
+            window.location.assign("/arrow");
+          }
+          function getClass(){
+            window.location.assign("/class");
+          }
+          function getPromise(){
+            window.location.assign("/promise");
+          }
+          function getMA(){
+            window.location.assign("/playlists");
+          }
+
+        </script>
+    </body>
+</html>

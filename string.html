@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="style.css">
+        <title>ES6 / ES2015</title>
+
+        <style>
+            .leftbox{
+                height: 300px;
+                width: 50%;
+                position:relative;
+            }
+           .rightbox{
+                height: 300px;
+                width: 50%;
+                position:relative;
+            }
+        </style>        
+    </head>
+
+    <body>
+
+        <h1>ES5 vs ES6/ES7 Demo (Comparision of features)</h1>
+        <h2>2. String</h2>
+		<div class ="container col-xs-12">
+            <h3>Use backtick `` to simplify string interpolation</h3>
+            <span class = "leftbox col-xs-6"><img class= 'pic' src='img/str_01_es5.png'></img>
+                <br>
+                <button class='leftbutton' onclick="string1_5()">Run</button>
+                <br>
+                <textarea class='output5' name='string1_5'></textarea>
+            </span>
+            <span class = "rightbox col-xs-6"><img class= 'pic' src='img/str_01_es6.png'></img>
+                <br>
+                <button class='rightbutton' onclick="string1_6()">Run</button>
+                <br>
+                <textarea class='output6' name='string1_6'></textarea>
+            </span>
+        </div>
+
+        <div class ="container col-xs-12" style= "margin-top: 100px;">
+            <h3>More features in String manipulation</h3>
+            <span class = "leftbox col-xs-6" style = "width: 100%; height:400px;"><img class= 'pic' src='img/str_02_es6.png'></img>
+
+            </span>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
